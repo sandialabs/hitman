@@ -8,7 +8,7 @@ Consider the relationships
     \dot{\phi} &= \left(J_\phi^r\right)^{-1} \omega^r\\
     \Delta R(t) &= \exp\big(-\phi(t-\tau)\big)\exp\big(\phi(t)\big) \\
     \Delta \theta &= \int_{t-\tau}^t \omega^r(s) ds
-    
+
 
 If :math:`\omega` is defined as a polynomial, then :math:`\Delta \theta` is available
 directly. However, :math:`\phi` must be solved numerically. Conversely, if :math:`\phi`
