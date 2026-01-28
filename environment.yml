@@ -1,0 +1,13 @@
+name: hitman
+channels:
+  - defaults
+dependencies:
+  - python>=3.12
+  - pip>=24.0
+  - pip:
+      # Usage & unit-test requirements
+      - -r requirements.txt
+      # Documentation requirements
+      - -r requirements-docs.txt
+      # development
+      - -r requirements-dev.txt

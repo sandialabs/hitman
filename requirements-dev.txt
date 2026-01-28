@@ -1,0 +1,8 @@
+pre-commit
+pylint
+# for unit tests
+parameterized
+coverage
+
+matplotlib
+pandas

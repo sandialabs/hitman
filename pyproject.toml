@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"] # Ensure Setuptools is available for dynamic loading
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hitman"  # Package name
+version = "0.0.5"  # Package version
+description = "Hermite Interpolation of Trajectories (HIT) and Measurement synthesis for Analysis of Navigators (MAN)"
+authors = [{ name = "HITMAN Developers", email = "mrwalke@sandia.gov" }]  # Replace with your name and email
+license = { file = "LICENSE" }  # Specify the license file if you have one
+readme = "README.md"  # Specify the README file if you have one
+keywords = ["hitman", "IMU", "trajectory", "measurement", "analysis", "navigation","spline","Hermite", "rotation","Lie Theory"]  # Add relevant keywords
+dynamic = ["dependencies"] # Declare 'dependencies' as dynamic
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

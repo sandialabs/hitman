@@ -1,0 +1,13 @@
+# for documentation building
+sphinx
+myst_nb
+sphinx_rtd_theme
+sphinxcontrib.bibtex
+sphinx-autodoc-typehints
+
+ipympl # interactive plotting
+
+# For notebook use-cases
+matplotlib
+pandas
+lielab>=0.5.1
