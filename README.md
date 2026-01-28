@@ -1,6 +1,12 @@
+![Lines of code](https://sloc.xyz/github/sandialabs/hitman/?category=code)
+[![Test status](https://github.com/sandialabs/hitman/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/sandialabs/hitman/actions/workflows/python-unittest.yml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sandialabs/hitman/pre-commit.yml?logo=pre-commit&label=pre-commit)
+[![Documentation Status](https://readthedocs.org/projects/hitman/badge/?version=latest)](http://hitman-imu.readthedocs.io/en/latest/?badge=latest)
+[![GitHub License](https://img.shields.io/github/license/sandialabs/hitman)](https://github.com/sandialabs/hitman/blob/main/LICENSE)
+
 # HITMAN
 
-Hermite Interpolation of Trajectories (HIT) and Measurement synthesis for Analysis of Navigators (MAN) is a python libary (HITMAN) for interpolating flight trajectories and generating synthetic IMU measurements.
+Hermite Interpolation of Trajectories (HIT) and Measurement synthesis for Analysis of Navigators (MAN) is a python libary (HITMAN) for interpolating flight trajectories and generating synthetic IMU measurements. See the [documentation](https://hitman-imu.readthedocs.io/) for motivation and usage.
 
 ## Getting started
 

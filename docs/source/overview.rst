@@ -30,4 +30,4 @@ article do not necessarily represent the views of the U.S. Department of Energy
 or the United States Government.
 
 
-.. _HITMAN: https://cee-gitlab.sandia.gov/rear-window/hitman/
+.. _HITMAN: https://github.com/sandialabs/hitman

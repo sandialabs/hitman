@@ -1,0 +1,35 @@
+name: Python Unit Tests CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"] # Test across different Python versions
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install --no-input -r requirements.txt -r requirements-dev.txt unittest-xml-reporting
+
+    - name: Run unit tests
+      run: |
+        # Command to run tests using Python's built-in unittest module
+        # The 'discover' command automatically finds test files
+        python  -m xmlrunner discover -s tests -p "*test.py" -o test_results
+        
