@@ -33,6 +33,7 @@ repos:
   - id: flake8
     args: [--extend-ignore=E203, --max-line-length=88]    # Must be consistent with black!
 - repo: https://github.com/pre-commit/mirrors-pylint
+  rev: 'v3.2.5' # Use the latest pylint version number
   hooks:
   - id: pylint
     name: pylint
