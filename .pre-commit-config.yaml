@@ -32,16 +32,3 @@ repos:
   hooks:
   - id: flake8
     args: [--extend-ignore=E203, --max-line-length=88]    # Must be consistent with black!
-- repo: https://github.com/pre-commit/mirrors-pylint
-  rev: 'v2.7.4'
-  hooks:
-  - id: pylint
-    name: pylint
-    entry: pylint
-    language: python
-    language_version: python3
-    types: [python]
-    exclude: ^(examples|docs)
-    #args: ['--score=n', '--disable=all',
-    #'--enable=missing-docstring,broad-exception-raised']
-    args: ['--score=n', '--disable=all', '--enable=broad-exception-raised']
