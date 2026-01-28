@@ -1,7 +1,7 @@
 ![Lines of code](https://sloc.xyz/github/sandialabs/hitman/?category=code)
 [![Test status](https://github.com/sandialabs/hitman/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/sandialabs/hitman/actions/workflows/python-unittest.yml)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sandialabs/hitman/pre-commit.yml?logo=pre-commit&label=pre-commit)
-[![Documentation Status](https://readthedocs.org/projects/hitman/badge/?version=latest)](http://hitman-imu.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/hitman/badge/?version=latest)](https://app.readthedocs.org/projects/hitman-imu/badge/?version=latest)
 [![GitHub License](https://img.shields.io/github/license/sandialabs/hitman)](https://github.com/sandialabs/hitman/blob/main/LICENSE)
 
 # HITMAN
