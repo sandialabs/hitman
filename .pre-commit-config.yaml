@@ -1,0 +1,46 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.5.0
+  hooks:
+  - id: check-yaml
+    args: [--unsafe]  # Tolerate ! for mermaid in mkdocs.yml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+- repo: https://github.com/psf/black-pre-commit-mirror
+  rev: 24.8.0
+  hooks:
+  - id: black
+    name: black
+    entry: black
+    description: 'Black: The uncompromising Python code formatter'
+    language: python
+    types: [python]
+    language_version: python3.12 # Specify the Python version your project uses
+  - id: black-jupyter
+    name: black-jupyter
+    description:
+      "Black: The uncompromising Python code formatter (with Jupyter Notebook support)"
+    entry: black
+    language: python
+    args: [--line-length=88]         # Must be consistent with flake8!
+    minimum_pre_commit_version: 2.9.2
+    require_serial: true
+    types_or: [python, pyi, jupyter]
+    additional_dependencies: [".[jupyter]"]
+- repo: https://github.com/PyCQA/flake8
+  rev: 7.0.0
+  hooks:
+  - id: flake8
+    args: [--extend-ignore=E203, --max-line-length=88]    # Must be consistent with black!
+- repo: local
+  hooks:
+  - id: pylint
+    name: pylint
+    entry: pylint
+    language: python
+    language_version: python3
+    types: [python]
+    exclude: ^(scico/test/|examples|docs)
+    #args: ['--score=n', '--disable=all',
+    #'--enable=missing-docstring,broad-exception-raised']
+    args: ['--score=n', '--disable=all', '--enable=broad-exception-raised']
